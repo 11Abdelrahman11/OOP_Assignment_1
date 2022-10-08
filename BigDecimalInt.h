@@ -19,6 +19,7 @@ public:
 	BigDecimalInt(int number);
 	bool check_number(string s);
 	BigDecimalInt operator+(BigDecimalInt second);
+	friend BigDecimalInt operator-(BigDecimalInt first,BigDecimalInt second);
 	void print();
 	bool operator<(BigDecimalInt second);
 	bool operator==(BigDecimalInt other);
@@ -26,6 +27,7 @@ public:
 	friend ostream& operator<<(ostream& os, BigDecimalInt first);
 	char get_sign();
 	int get_size();
+
 
 
 	

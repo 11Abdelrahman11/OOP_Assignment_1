@@ -309,3 +309,4 @@ bool BigDecimalInt::operator==(BigDecimalInt second) {
 		return false;
 	}
 }
+
