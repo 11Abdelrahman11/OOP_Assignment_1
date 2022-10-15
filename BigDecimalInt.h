@@ -8,6 +8,8 @@
 #include <cmath>
 using namespace std;
 
+
+
 class BigDecimalInt
 {
 private:
@@ -17,6 +19,7 @@ private:
 public:
 	BigDecimalInt(string number); 
 	BigDecimalInt(int number);
+	BigDecimalInt();
 	bool check_number(string s);
 	BigDecimalInt operator+(BigDecimalInt second);
 	friend BigDecimalInt operator-(BigDecimalInt first,BigDecimalInt second);
@@ -27,7 +30,6 @@ public:
 	friend ostream& operator<<(ostream& os, BigDecimalInt first);
 	char get_sign();
 	int get_size();
-
 
 
 	

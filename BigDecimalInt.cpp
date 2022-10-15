@@ -56,9 +56,43 @@ BigDecimalInt::BigDecimalInt(int number) : BigDecimalInt( to_string(number) )
 
 }
 
+BigDecimalInt::BigDecimalInt()
+{
+}
+
 
 BigDecimalInt BigDecimalInt::operator+(BigDecimalInt second)
 {
+
+	BigDecimalInt f , p;
+	f.num = num;
+	f.sign = sign;
+	f.has_sign = has_sign;
+	if (sign == '+' && second.sign == '-') {
+		second.sign = '+';
+		 p = f - second;
+		 second.sign = '-';
+		 return p;
+		 /* here */
+	}
+	else if (sign == '-' && second.sign == '+') {
+		f.sign = '+';
+		p = second - f;
+		f.sign = '-';
+		return p;
+
+
+	}
+
+
+
+
+
+
+
+
+
+
 	int i, j;
 	bool our = false;
 	if (second.num.size() > num.size()) {
@@ -161,6 +195,9 @@ BigDecimalInt BigDecimalInt::operator+(BigDecimalInt second)
 
 
 	BigDecimalInt s ( final );
+	if (second.sign == '-' && sign == '-') {
+		s.sign = '-';
+	}
 	
 	return s;
 
@@ -274,6 +311,7 @@ char BigDecimalInt::get_sign() {
 int BigDecimalInt::get_size() {
 	return num.size();
 }
+
 
 
 bool BigDecimalInt::operator==(BigDecimalInt second) {

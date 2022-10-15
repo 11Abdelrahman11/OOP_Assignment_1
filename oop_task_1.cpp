@@ -151,14 +151,18 @@ BigDecimalInt operator-( BigDecimalInt first ,BigDecimalInt second) {
 	return s;
 }
 
+
+void cf(int t) {
+	cout << t;
+}
+
 int main()
 {
 
 	
-	BigDecimalInt x1("113456789011345678901134567890");
-	/* -2 - (- 5 )*/
-	BigDecimalInt x2("123456789012345678901234567890");
-	cout << x1 + x2;
+	BigDecimalInt x1("");
+	BigDecimalInt x2("");
+	cout << x1 + x2 ;
 	
 	
 	
