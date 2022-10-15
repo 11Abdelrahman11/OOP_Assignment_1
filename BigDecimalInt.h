@@ -1,6 +1,8 @@
 #pragma once
 
 #include <vector>
+/*added the map */
+#include <map>
 #include <iostream>
 #include <cctype>
 #include <string>
