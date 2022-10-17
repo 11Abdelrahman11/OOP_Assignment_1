@@ -1,7 +1,0 @@
-# depslib dependency file v1.0
-1665065483 source:e:\study\second year\second year_firstsemester\oop\assignment 1\another 9\main.cpp
-	<iostream>
-	<fstream>
-	<vector>
-	<cstring>
-

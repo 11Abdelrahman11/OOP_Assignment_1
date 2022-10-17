@@ -1,5 +1,6 @@
 #include <iostream>
-#include <bits/c++io.h>
+#include <string>
+#include <cstring>
 /*
     Algorithm:
     for loop looping over the statement character by character
