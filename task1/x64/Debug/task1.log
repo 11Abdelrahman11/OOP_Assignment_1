@@ -1,0 +1,4 @@
+﻿  oop_task_1.cpp
+E:\Study\Github\OOP_Assignment_1\oop_task_1.cpp(102,26): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+E:\Study\Github\OOP_Assignment_1\oop_task_1.cpp(103,27): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+  task1.vcxproj -> E:\Study\Github\new project\OOP_Assignment_1\task1\x64\Debug\task1.exe
